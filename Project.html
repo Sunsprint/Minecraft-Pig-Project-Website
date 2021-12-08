@@ -288,6 +288,24 @@
                         <p class="u-gallery-text"></p>
                       </div>
                     </div>
+                    <div class="u-effect-fade u-gallery-item">
+                      <div class="u-back-slide" data-image-width="4000" data-image-height="3000">
+                        <img class="u-back-image u-expanded" src="images/IMG_20211207_181734.jpg">
+                      </div>
+                      <div class="u-over-slide u-shading u-over-slide-17">
+                        <h3 class="u-gallery-heading"></h3>
+                        <p class="u-gallery-text"></p>
+                      </div>
+                    </div>
+                    <div class="u-effect-fade u-gallery-item">
+                      <div class="u-back-slide" data-image-width="4000" data-image-height="3000">
+                        <img class="u-back-image u-expanded" src="images/IMG_20211207_181822.jpg">
+                      </div>
+                      <div class="u-over-slide u-shading u-over-slide-18">
+                        <h3 class="u-gallery-heading"></h3>
+                        <p class="u-gallery-text"></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -327,9 +345,9 @@
     <section class="u-clearfix u-palette-5-dark-1 u-section-4" id="carousel_3b4e">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-accordion u-collapsed-by-default u-expanded-width u-accordion-1">
-          <div class="u-accordion-item">
+          <div class="u-accordion-item u-accordion-item-1">
             <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-palette-5-light-1 u-text-body-color u-accordion-link-1" id="link-b9d5" aria-controls="b9d5" aria-selected="false">
-              <span class="u-accordion-link-text">Algorithm</span><span class="u-accordion-link-icon u-icon u-text-black u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6de4"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-6de4"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+              <span class="u-accordion-link-text">Computer Vision</span><span class="u-accordion-link-icon u-icon u-text-black u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6de4"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-6de4"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
 	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-align-left u-container-style u-palette-5-dark-2 u-accordion-pane-1" id="b9d5" aria-labelledby="link-b9d5">
@@ -339,7 +357,7 @@
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                         <div class="u-container-layout u-container-layout-2">
-                          <p class="u-text u-text-1"> Originally, we intended to use computer vision as a means of having the pig interact with its surroundings.  We developed a working model, but quickly realized the infeasibility of this method.  On a laptop, this algorithm got at best 2 frames per second, which is far slower than would be practical. Hence we pivoted to a color masking model: our pig would move toward the direction of any orange indicator, such as a carrot. This method was much more reliable in terms of speed, but took measurements so quickly that the bounding boxes we created around orange objects were exceedingly fickle. To counteract the constant fluctuations, we took a moving average of center coordinates and bounding box area to minimize deviation from the mean bounding box. Finally, we encoded "forward" movement as an action taken when the area is sufficiently small, while we assigned "left" and "right" to corrections to the pig's course based on the horizontal distance from the center of the frame. If the pig did not need to turn or move forward, then it would stay in place.<br>
+                          <p class="u-text u-text-1"> Originally, we intended to use computer vision as a means of having the pig interact with its surroundings.  We developed a working model, but quickly realized the infeasibility of this method.  On a laptop, this algorithm got at best 2 frames per second, which is far slower than would be practical to implement on a Raspberry Pi. Hence we pivoted to a color masking model: our pig would move toward the direction of any orange indicator, such as a carrot. This method was much more reliable in terms of speed, but took measurements so quickly that the bounding boxes we created around orange objects were exceedingly fickle. To counteract the constant fluctuations, we took a moving average of center coordinates and bounding box area to minimize deviation from the mean bounding box. Finally, we encoded "forward" movement as an action taken when the area is sufficiently small, while we assigned "left" and "right" to corrections to the pig's course based on the horizontal distance from the center of the frame. If the pig did not need to turn or move forward, then it would stay in place.<br>
                           </p>
                         </div>
                       </div>
@@ -347,7 +365,38 @@
                         <div class="u-container-layout u-valign-top u-container-layout-3">
                           <div class="u-expanded-width u-video u-video-contain u-video-1">
                             <div class="embed-responsive embed-responsive-1">
-                              <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/iSgRkd5HlOM?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+                              <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/iSgRkd5HlOM?mute=0&amp;showinfo=0&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-palette-5-light-1 u-text-body-color u-accordion-link-2" id="link-b9d5" aria-controls="b9d5" aria-selected="false">
+              <span class="u-accordion-link-text">Color Masking</span><span class="u-accordion-link-icon u-icon u-text-black u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-12cd"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-12cd"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-align-left u-container-style u-palette-5-dark-2 u-accordion-pane-2" id="b9d5" aria-labelledby="link-b9d5">
+              <div class="u-container-layout u-valign-bottom u-container-layout-4">
+                <div class="u-clearfix u-layout-wrap u-layout-wrap-2">
+                  <div class="u-gutter-0 u-layout">
+                    <div class="u-layout-col">
+                      <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                        <div class="u-container-layout u-container-layout-5">
+                          <p class="u-align-center u-text u-text-2">Here we have a demonstration of the color masking algorithm running the motors.<br>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                        <div class="u-container-layout u-valign-top u-container-layout-6">
+                          <div class="u-expanded-width u-video u-video-contain u-video-2">
+                            <div class="embed-responsive embed-responsive-2">
+                              <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/z9mv6nk2a_k?mute=0&amp;showinfo=0&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                             </div>
                           </div>
                         </div>
